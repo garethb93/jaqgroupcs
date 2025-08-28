@@ -3,24 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fixed Size Embed</title>
+  <title>Your Canva Design</title>
   <style>
     .canva-wrapper {
       position: relative;
-      width: 1500px;   /* fixed width */
-      height: 1080px;  /* fixed height */
-      margin: 0 auto;  /* center horizontally */
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%; /* Aspect ratio: 16:9 */
+      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+      margin-top: 1.6em;
+      margin-bottom: 0.9em;
       overflow: hidden;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+      will-change: transform;
     }
     .canva-iframe {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
+      top: 0;
+      left: 0;
       border: none;
+      padding: 0;
+      margin: 0;
     }
   </style>
 </head>
@@ -28,10 +33,17 @@
   <div class="canva-wrapper">
     <iframe
       class="canva-iframe"
-      src="https://www.canva.com/design/DAGwu7Ee5z8/2BuUblX4j9eDnwXh-qLMaw/view"
-      allowfullscreen
-      loading="lazy">
+      loading="lazy"
+      src="https://www.canva.com/design/DAGwu7Ee5z8/2BuUblX4j9eDnwXh-qLMaw/view?embed"
+      allowfullscreen="allowfullscreen"
+      allow="fullscreen">
     </iframe>
   </div>
+  <a
+    href="https://www.canva.com/design/DAGwu7Ee5z8/2BuUblX4j9eDnwXh-qLMaw/view?utm_content=DAGwu7Ee5z8&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+    target="_blank"
+    rel="noopener">
+    Canva Design by Gareth
+  </a>
 </body>
 </html>
